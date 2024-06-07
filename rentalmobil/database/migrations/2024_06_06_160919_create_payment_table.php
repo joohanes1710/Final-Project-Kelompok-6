@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('payment', function (Blueprint $table) {
             $table->id();
             $table->decimal('total');
-            $table->date('tanggal_pembayaran');
+            $table->date('pembayaran');
 
             $table->unsignedBigInteger('rental_id');
             $table->foreign('rental_id')->references('id')->on('rental');
