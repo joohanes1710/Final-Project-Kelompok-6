@@ -49,7 +49,7 @@
                         <a class="nav-link" href="services.html">Services</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Vehicles</a>
+                        <a class="nav-link" href="gallery.html">Car</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="client.html">Client</a>

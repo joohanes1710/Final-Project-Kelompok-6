@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('car', function (Blueprint $table) {
             $table->id();
             $table->string('merek');
-            $table->string('model');
+            $table->string('type');
             $table->integer('tahun');
             $table->string('status');
-            $table->decimal('harga_sewa_perhari');
+            $table->decimal('price');
             $table->timestamps();
         });
     }

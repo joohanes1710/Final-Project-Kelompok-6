@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('rental', function (Blueprint $table) {
             $table->id();
-            $table->string('tanggal_peminjaman');
-            $table->string('tanggal_pengembalian');
+            $table->date('peminjaman');
+            $table->date('pengembalian');
 
             $table->unsignedBigInteger('customer_id');
             $table->unsignedBigInteger('car_id');
