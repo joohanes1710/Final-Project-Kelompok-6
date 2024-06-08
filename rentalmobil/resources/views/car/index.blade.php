@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    car
+    Car
 @endsection
 
 @section('content')

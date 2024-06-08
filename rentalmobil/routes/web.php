@@ -2,7 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\TemplateController;    
+use App\Http\Controllers\CarController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\RentalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +19,18 @@ use App\Http\Controllers\TemplateController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+route::get('/', function(){
+    return view ('index');
 });
 
 
-route::get('/master', function(){
-    return view ('layouts.master');
-});
+
+Route::resource('car', CarController::class);
+Route::resource('customer', CustomerController::class);
+Route::resource('rental', RentalController::class);
+Route::resource('payment', PaymentController::class);
