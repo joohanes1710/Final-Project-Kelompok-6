@@ -7,6 +7,7 @@ use App\Http\Controllers\CarController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\RentalController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
