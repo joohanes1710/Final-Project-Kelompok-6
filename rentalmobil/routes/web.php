@@ -34,3 +34,6 @@ Route::resource('car', CarController::class);
 Route::resource('customer', CustomerController::class);
 Route::resource('rental', RentalController::class);
 Route::resource('payment', PaymentController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
